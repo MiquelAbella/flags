@@ -1,0 +1,102 @@
+.flag {
+  width: 20%;
+  cursor: pointer;
+}
+
+.flagsContainer {
+  background: url('../flagsBackground.png');
+  background-size: cover ;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.countryName {
+  transform: translateY(-20vh);
+  font-size: 5vw;
+  position: absolute;
+}
+
+.score {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(-20vh);
+}
+
+.countdown {
+  position: absolute;
+  transform: translateY(-10vh);
+  bottom: 0;
+}
+
+.startButton {
+  cursor: pointer;
+  border-radius: 50%;
+  height: 20vw;
+  width: 20vw;
+  font-size: 3vw;
+  border: none;
+  outline: none;
+  background-color: rgb(189, 189, 189);
+}
+
+@media (max-width: 600px) {
+  .flag {
+    width: 30%;
+    cursor: pointer;
+  }
+  
+  .flagsContainer {
+    background: url('../flagsBackground.png');
+    background-size: cover ;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  .countryName {
+    transform: translateY(0vh);
+    margin-right: 0vw;
+    margin: 0;
+    padding: 0;
+    font-size: 7vw;
+    top: 0;
+    right: 0;
+    position: relative;
+  }
+  
+  .score {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateY(0vh);
+    margin-right: 3vw;
+    font-size: 7vw;
+  }
+  
+  .countdown {
+    position: absolute;
+    transform: translateY(-10vh);
+    bottom: 0;
+    right: 0;
+    font-size: 7vw;
+  }
+  
+  .startButton {
+    cursor: pointer;
+    border-radius: 50%;
+    height: 50vw;
+    width: 50vw;
+    font-size: 10vw;
+    border: none;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+  }
+}
